@@ -12,17 +12,15 @@ remain=duration%30
 startvalue=0
 endvalue=30
 if parts<1 and remain >1:
-	ffmpeg_extract_subclip("sara.mp4",startvalue,remain,targetname=str(datetime.datetime.now())+".mp4")
+	ffmpeg_extract_subclip(videopath,startvalue,remain,targetname=str(datetime.datetime.now())+".mp4")
 else :
 	for i in range(parts):
-		ffmpeg_extract_subclip("sara.mp4",startvalue,endvalue,targetname=str(datetime.datetime.now())+".mp4")
+		ffmpeg_extract_subclip(videopath,startvalue,endvalue,targetname=str(datetime.datetime.now())+".mp4")
 		startvalue +=30
-		print (startvalue)
 		endvalue +=30
-		print(endvalue)
 	if remain>1:
-		ffmpeg_extract_subclip("sara.mp4",startvalue,startvalue+remain,targetname=str(datetime.datetime.now())+".mp4")
-		print(remain)
+		ffmpeg_extract_subclip(videopath,startvalue,startvalue+remain,targetname=str(datetime.datetime.now())+".mp4")
+	
 
 		
 
