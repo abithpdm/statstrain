@@ -23,6 +23,8 @@ remain=duration%30
 startvalue=0
 #initial end value
 endvalue=30
+
+#check whether the video is totally under 30 seconds
 if parts<1 and remain >1:
 	ffmpeg_extract_subclip(videopath,startvalue,remain,targetname=str(datetime.datetime.now())+".mp4")
 else :
