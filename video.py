@@ -21,6 +21,7 @@ remain=duration%30
 
 #initial value of the starting point
 startvalue=0
+#initial end value
 endvalue=30
 if parts<1 and remain >1:
 	ffmpeg_extract_subclip(videopath,startvalue,remain,targetname=str(datetime.datetime.now())+".mp4")
