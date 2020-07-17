@@ -1,7 +1,9 @@
 import moviepy.editor
+#moviepy editor to import trim feature
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 #module to get system time
 import datetime
+#easygui is a module to get gui for selcting files
 import easygui
 #from tkinter.filedialog import askopenfilename
 
