@@ -14,6 +14,7 @@ video=moviepy.editor.VideoFileClip(videopath)
 
 #get the total duration of the video
 duration=int(video.duration)
+#get the total parts to be made to status
 parts=duration/30
 remain=duration%30
 startvalue=0
