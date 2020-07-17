@@ -1,5 +1,6 @@
 import moviepy.editor
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
+#module to get system time
 import datetime
 import easygui
 #from tkinter.filedialog import askopenfilename
@@ -20,8 +21,3 @@ else :
 		endvalue +=30
 	if remain>1:
 		ffmpeg_extract_subclip(videopath,startvalue,startvalue+remain,targetname=str(datetime.datetime.now())+".mp4")
-	
-
-		
-
-		
