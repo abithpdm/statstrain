@@ -11,6 +11,8 @@ import easygui
 videopath=easygui.fileopenbox()
 #get the path of the selected video file
 video=moviepy.editor.VideoFileClip(videopath)
+
+#get the total duration of the video
 duration=int(video.duration)
 parts=duration/30
 remain=duration%30
