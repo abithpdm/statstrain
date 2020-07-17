@@ -18,6 +18,8 @@ duration=int(video.duration)
 parts=duration/30
 #not every part contain exact 30 minutes , so get the remaining time
 remain=duration%30
+
+#initial value of the starting point
 startvalue=0
 endvalue=30
 if parts<1 and remain >1:
