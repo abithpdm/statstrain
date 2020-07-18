@@ -34,6 +34,7 @@ else :
 	for i in range(parts):
 		#same ffmpeg_extract_subclip method is used
 		ffmpeg_extract_subclip(videopath,startvalue,endvalue,targetname=str(datetime.datetime.now())+".mp4")
+		#increment start value for every parts
 		startvalue +=30
 		endvalue +=30
 	if remain>1:
