@@ -30,6 +30,7 @@ if parts<1 and remain >1:
 	ffmpeg_extract_subclip(videopath,startvalue,remain,targetname=str(datetime.datetime.now())+".mp4")
 	#the aattributes are : video file , starting time , ending time
 else :
+	#now if we have video more than 30 seconds we execute this loop
 	for i in range(parts):
 		ffmpeg_extract_subclip(videopath,startvalue,endvalue,targetname=str(datetime.datetime.now())+".mp4")
 		startvalue +=30
