@@ -28,7 +28,7 @@ endvalue=30
 if parts<1 and remain >1:
 	#using ffmpeg_extract_subclip we cut the video
 	ffmpeg_extract_subclip(videopath,startvalue,remain,targetname=str(datetime.datetime.now())+".mp4")
-	#the aattributes are : video file
+	#the aattributes are : video file , starting time , ending time
 else :
 	for i in range(parts):
 		ffmpeg_extract_subclip(videopath,startvalue,endvalue,targetname=str(datetime.datetime.now())+".mp4")
