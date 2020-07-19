@@ -1,5 +1,6 @@
 import moviepy.editor
 #moviepy editor to import trim feature
+#import ffmpeg_extract_subclip method
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 #module to get system time
 import datetime
