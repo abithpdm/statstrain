@@ -10,6 +10,7 @@ import easygui
 
 #get the file user wanted to trim
 videopath=easygui.fileopenbox()
+
 #get the path of the selected video file
 video=moviepy.editor.VideoFileClip(videopath)
 
